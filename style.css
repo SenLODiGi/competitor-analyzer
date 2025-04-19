@@ -1,0 +1,89 @@
+/* Web 3.0 Inspired Styles */
+body {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark Theme (Default) */
+body.bg-dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+}
+
+/* Light Theme */
+body.bg-light {
+  background: linear-gradient(135deg, #f0f2f5 0%, #ffffff 100%);
+  color: #333;
+}
+
+/* Neumorphic Effect */
+.neumorphic {
+  background: linear-gradient(145deg, #1e2a44, #141e33);
+  box-shadow: 5px 5px 15px #0d1626, -5px -5px 15px #2b3f66;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+body.bg-light .neumorphic {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+}
+
+.neumorphic:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px #0d1626, -8px -8px 20px #2b3f66;
+}
+
+body.bg-light .neumorphic:hover {
+  box-shadow: 8px 8px 20px #c0c0c0, -8px -8px 20px #ffffff;
+}
+
+/* Button Animations */
+.btn-primary, .btn-success {
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+.btn-primary:hover, .btn-success:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.5);
+}
+
+/* Input Animations */
+.form-control {
+  transition: border-color 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 15px;
+}
+
+/* Accessibility */
+:focus {
+  outline: 3px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+/* Particle Background Overlay */
+#particles-js {
+  opacity: 0.7;
+}
